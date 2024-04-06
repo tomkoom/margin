@@ -4,9 +4,10 @@ import { styled } from "styled-components";
 const Home: FC = () => {
   return (
     <HomeStyled>
-      <Content>
+      <div className="content">
         <h1>Margin 🛠️</h1>
-        <Intro>
+
+        <div className="header">
           <p>
             Web3 development studio focused on crafting products on the{" "}
             <a
@@ -27,36 +28,34 @@ const Home: FC = () => {
             </a>{" "}
             or <a href="mailto:tomash.sugint@gmail.com">send email</a>
           </p>
-        </Intro>
-      </Content>
+        </div>
+      </div>
     </HomeStyled>
   );
 };
 
 const HomeStyled = styled.div`
   text-align: left;
-  padding: 1rem 1rem 4rem 1rem;
-
-  /* center */
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-`;
-
-const Content = styled.div`
-  max-width: 36rem;
-`;
-
-const Intro = styled.div`
-  margin-top: 1rem;
+  padding: 1rem;
   display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 
-  > p {
-    font-size: var(--fs4);
+  > div.content {
+    width: 100%;
+    max-width: 36rem;
+
+    > div.header {
+      margin-top: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      > p {
+        font-size: var(--fs4);
+      }
+    }
   }
 `;
 

@@ -28,6 +28,11 @@ a {
   text-decoration: none;
   padding: 2px;
   box-shadow: 0 3px tomato;
+  transition: var(--transition1);
+}
+
+a:hover {
+  color: aquamarine;
 }
 
 p,
@@ -56,22 +61,4 @@ ul {
 
 img {
   width: 100%;
-}
-
-/* global classes */
-
-/* .pageTitle {
-  font-size: var(--fs2);
-  font-weight: var(--fwBlack);
-  line-height: 125%;
-  margin-bottom: 0.5rem;
-  text-align: center;
-} */
-
-/* responsive */
-
-@media (max-width: 1024px) {
-  html {
-    font-size: 15px;
-  }
 }

@@ -91,17 +91,7 @@ h6 {
 
   /* -- dark theme -- */
 
-  /* highlight colors */
-  --highlight1: var(--hColor1);
-  --highlight2: var(--hColor2);
-  --highlight3: var(--hColor3);
-  --highlightColor1Rgb: var(--hColorRgb);
-  --highlightColor2Rgb: var(--hColorRgb2);
-  --highlightColor3Rgb: var(--hColorRgb3);
-
-  /* main */
   --primaryColor: var(--coolGray10);
-  --primaryColorRgb: var(--coolGray10Rgb);
   --secondaryColor: var(--coolGray30);
   --tertiaryColor: var(--coolGray50);
   --background: #000;
